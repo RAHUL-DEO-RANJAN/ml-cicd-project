@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with pylint
         run: |
-          pylint model/model.py tests/test_model.py
+          pylint model/*.py tests/*.py
 
   test:
     runs-on: ubuntu-latest
