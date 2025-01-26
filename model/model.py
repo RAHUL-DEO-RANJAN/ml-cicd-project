@@ -1,4 +1,3 @@
-import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -14,7 +13,7 @@ def train_model():
     """
     # Load iris dataset
     iris = load_iris()
-    X, y = iris.data, iris.target
+    X, y = iris['data'], iris['target']
 
     # Split into train and test sets with fixed random state
     X_train, X_test, y_train, y_test = train_test_split(
